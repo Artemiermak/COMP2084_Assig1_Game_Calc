@@ -16,11 +16,10 @@ namespace Assignment_1_Artem_Iermak
 
         protected void btnCalculate_Click(object sender, EventArgs e)
         {
-            /* change text from input from to Int32 */
-            /*Int32 radioBtn1 = Convert.ToInt32(radioResult1.Text);
-            Int32 radioBtn2 = Convert.ToInt32(radioResult2.Text);
-            Int32 radioBtn3 = Convert.ToInt32(radioResult3.Text);
-            Int32 radioBtn4 = Convert.ToInt32(radioResult4.Text);*/
+            Int32 radio1 = Convert.ToInt32(radioResult1.Text);
+            Int32 radio2 = Convert.ToInt32(radioResult2.Text);
+            Int32 radio3 = Convert.ToInt32(radioResult3.Text);
+            Int32 radio4 = Convert.ToInt32(radioResult4.Text);
 
             Int32 scored1 = Convert.ToInt32(txtScored1.Text);
             Int32 scored2 = Convert.ToInt32(txtScored2.Text);
@@ -37,21 +36,31 @@ namespace Assignment_1_Artem_Iermak
             Int32 Spectators3 = Convert.ToInt32(txtSpectators3.Text);
             Int32 Spectators4 = Convert.ToInt32(txtSpectators4.Text);
 
-            // display results
-            lblNumberOfGamesWon.Text = Convert.ToString(scored1);
 
-            /* [][][][][] calculate game results [][][][][][]*/
+            /* [][][][][][][][][] calculate and display game results [][][][][][][][][]*/
+            /* [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
 
+            Int32 NumberOfGames = 4;
             /* ----- a.	# of games won ----- */
+            Int32 GameWon = radio1 + radio2 + radio3 + radio4;
+            lblNumberOfGamesWon.Text = GameWon.ToString();
 
             /* ----- b.	# of games lost ----- */
+            Int32 GameLoss = NumberOfGames - GameWon;
+            lblNumberOfGamesLost.Text = GameLoss.ToString();
 
             /* ----- c.	Winning % - what % of the player's games did they win.  
              * For example, if they win 3 of 4 game the Winning % would show as .75 ----- */
+            Double WinningPercent = GameWon / Convert.ToDouble(NumberOfGames);
+            lblWinningPercent.Text = WinningPercent.ToString();
 
             /* ----- d.	Total points scored ----- */
+            Int32 TotalPointsScored = scored1 + scored2 + scored3 + scored4;
+            lblPointsScored.Text = TotalPointsScored.ToString();
 
             /* ----- e.	Total points allowed ----- */
+            Int32 TotalPointsAllowed = allowed1 + allowed2 + allowed3 + allowed4;
+            lblPointsAllowed.Text = TotalPointsAllowed.ToString();
 
             /* ----- f.	Point Differential - the difference between 
              * the total points scored and total points allowed.  
