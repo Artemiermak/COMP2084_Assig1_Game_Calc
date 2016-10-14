@@ -1,0 +1,13 @@
+﻿body {
+}
+#btnCalculate {
+    max-width: 100px !important;
+}
+.well {
+    margin: 5px;
+    max-width:280px;
+}
+.calculatedSection {
+    background-color: rgb(220, 220, 220);
+    margin: 2% 10% 2% 15%;
+}

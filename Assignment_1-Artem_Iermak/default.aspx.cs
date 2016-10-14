@@ -69,9 +69,16 @@ namespace Assignment_1_Artem_Iermak
              * If the player scores 10 total points and allows 15 
              * total points the Point Differential is -5. ----- */
 
+            Int32 PointDifferential = TotalPointsScored - TotalPointsAllowed;
+            lblPointDifferential.Text = PointDifferential.ToString();
+
             /* ----- g.	Total Spectators ----- */
+            Int32 TotalSpectators = Spectators1 + Spectators2 + Spectators3 + Spectators4;
+            lblTotalAttendance.Text = TotalSpectators.ToString();
 
             /* ----- h.	Average Spectators ----- */
+            Double AveSpectators = TotalSpectators / Convert.ToDouble(NumberOfGames);
+            lblAverageAttendance.Text = AveSpectators.ToString();
         }
 
 

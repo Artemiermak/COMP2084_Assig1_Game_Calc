@@ -614,24 +614,24 @@
         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
             /\/\/\/\/\/\/\/\/\/\/\ Calculated information section /\/\/\/\/\/\/\/\/\/\/\/\ 
             /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-->
-        <div class="jumbotron col-sm-8">
+        <div class="calculatedSection col-sm-8">
             <h2 class="page-header">Results of games</h2>
-            Wins: <asp:Label ID="lblNumberOfGamesWon" runat="server" Text=""></asp:Label>
+            <b>Wins: </b><asp:Label ID="lblNumberOfGamesWon" runat="server" Text=""></asp:Label>
             <br />
-            Losses: <asp:Label ID="lblNumberOfGamesLost" runat="server" Text=""></asp:Label>
+            <b>Losses: </b><asp:Label ID="lblNumberOfGamesLost" runat="server" Text=""></asp:Label>
             <br />
-            Winning %: <asp:Label ID="lblWinningPercent" runat="server" Text=""></asp:Label>
+            <b>Winning %: </b><asp:Label ID="lblWinningPercent" runat="server" Text=""></asp:Label>
             <br />
-            Points Scored: <asp:Label ID="lblPointsScored" runat="server" Text=""></asp:Label>
+            <b>Points Scored: </b><asp:Label ID="lblPointsScored" runat="server" Text=""></asp:Label>
             <br />
 
-            Points Allowed: <asp:Label ID="lblPointsAllowed" runat="server" Text=""></asp:Label>
+            <b>Points Allowed: </b><asp:Label ID="lblPointsAllowed" runat="server" Text=""></asp:Label>
             <br />
-            Point Differential: <asp:Label ID="lblPointDifferential" runat="server" Text=""></asp:Label>
+            <b>Point Differential: </b><asp:Label ID="lblPointDifferential" runat="server" Text=""></asp:Label>
             <br />
-            Total Attendance: <asp:Label ID="lblTotalAttendance" runat="server" Text=""></asp:Label>
+            <b>Total Attendance: </b><asp:Label ID="lblTotalAttendance" runat="server" Text=""></asp:Label>
             <br />
-            Average Attendance: <asp:Label ID="lblAverageAttendance" runat="server" Text=""></asp:Label>
+            <b>Average Attendance: </b><asp:Label ID="lblAverageAttendance" runat="server" Text=""></asp:Label>
         </div>
 
         <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
