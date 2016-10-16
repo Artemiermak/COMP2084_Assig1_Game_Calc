@@ -5,7 +5,7 @@
 
     <section class="container jumbotron">
         <h1 class="page-header">Game calculator</h1>
-        <p class="text-warning">All fields are required. No ties or draws are allowed.</p>
+        <p class="text-warning">All fields are required. No ties or draws are  allowed.</p>
 
         <!-- Forms to calculate game results. We use Bootstrap to build forms -->
         <div class="row">
